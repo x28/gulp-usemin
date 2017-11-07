@@ -198,6 +198,16 @@ usemin({
 
 ```
 
+#### transformOutputPath
+Type: `Function`
+
+Arguments:
+  * path (String): The path to the output file
+
+Return: The transformed path to the output file
+
+Function to transform the path of the output files. Useful to prepend or append strings to all output paths.
+
 ## Use case
 
 ```
