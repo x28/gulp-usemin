@@ -172,6 +172,32 @@ Type: `Boolean`
 
 Allows missing resources to be skipped, instead of throwing an error.
 
+#### cssReg
+Type: `Regex`
+
+Custom regular expression to match the file path in a style element. The first capturing group is used for file path.
+
+For Example :
+```js
+usemin({
+  cssReg: /<\s*link\s+.*?href\s*=\s*['"]?([^'"?# ]+).*?>/gi
+});
+
+```
+
+#### jsReg
+Type: `Regex`
+
+Custom regular expression to match the file path in a script element. The first capturing group is used for file path.
+
+For Example :
+```js
+usemin({
+  jsReg: /<\s*script\s+.*?src\s*=\s*['"]?([^'"?# ]+).*?><\s*\/\s*script\s*>/gi
+});
+
+```
+
 ## Use case
 
 ```
